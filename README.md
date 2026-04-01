@@ -1,5 +1,5 @@
 # test
-一、 任务一：网页数据采集
+# 任务一：网页数据采集
 目标： 访问 https://www.chinamoney.com.cn/english/bdInfo/，通过程序模拟用户操作，筛选出“Treasury Bond”和“2023年”发行的债券，并解析表格，提取指定列的数据，最终保存为CSV文件。
 实现思路：
 1.环境与工具： 使用 Python 语言，结合 selenium 库模拟浏览器操作，处理动态加载的网页内容。使用 pandas 库处理和保存数据。
@@ -15,14 +15,14 @@
 代码文件： TestOne.py
 运行方式：
 bash
-# 确保已安装必要的库pip install selenium pandas beautifulsoup4 webdriver-manager# 运行脚本python TestOne.py
+#确保已安装必要的库pip install selenium pandas beautifulsoup4 webdriver-manager# 运行脚本python TestOne.py
 输出结果：
 1.主要输出： bond_data.csv，包含所有符合条件的债券数据。
 2.调试文件（仅在程序出错时生成）：
 page_debug.html: 出错时的页面源码快照。
 debug_screenshot.png: 出错时的页面截图。
 
-二、 任务二：自定义正则匹配函数
+# 任务二：自定义正则匹配函数
 目标： 实现一个通用的 reg_search 函数，能够根据传入的正则表达式列表，从文本中灵活地提取信息。
 实现思路：
 1.函数设计： 函数 reg_search(text, regex_list) 接收两个参数。regex_list 是一个列表，其中每个元素是一个字典，键为字段名，值为对应的正则模式。
@@ -42,7 +42,7 @@ debug_screenshot.png: 出错时的页面截图。
 代码文件： TestTwo.py
 运行方式：
 bash
-# 直接运行脚本即可看到测试用例的输出python TestTwo.py
+#直接运行脚本即可看到测试用例的输出python TestTwo.py
 输出示例：
 python
 [{'标的证券': '600900.SH', '换股期限': ['2023-06-02', '2027-06-01']}]
